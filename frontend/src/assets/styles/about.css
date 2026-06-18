@@ -1,0 +1,212 @@
+.about-container {
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(6, 10, 25, 0.92),
+      rgba(6, 10, 25, 0.95)
+    ),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+  color: #d9d9d9;
+  font-size: 1.1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.glass-card,
+.section-card,
+.footer-card {
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  margin-bottom: 30px;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.25);
+}
+
+.glass-card:hover,
+.section-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.glass-card h2,
+.section-card h2 {
+  margin-bottom: 20px;
+}
+
+.feature-grid,
+.tech-grid,
+.benefits-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.feature-card,
+.tech-card,
+.benefit-card {
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  transition: 0.3s ease;
+
+  font-weight: 600;
+}
+
+.feature-card:hover,
+.tech-card:hover,
+.benefit-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.12);
+}
+
+.team-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  margin-bottom: 15px;
+
+  border: 3px solid white;
+}
+
+.team-card h3 {
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: #d0d0d0;
+}
+
+.footer-card {
+  text-align: center;
+}
+
+.footer-card h2 {
+  margin-bottom: 10px;
+}
+
+.footer-card p {
+  color: #d9d9d9;
+}
+
+@media (max-width: 768px) {
+
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid,
+  .tech-grid,
+  .benefits-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glass-card,
+  .section-card,
+  .footer-card {
+    padding: 20px;
+  }
+}
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
