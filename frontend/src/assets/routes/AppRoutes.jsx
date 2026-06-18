@@ -5,6 +5,7 @@ import About from "../../pages/common/About";
 import Features from "../../pages/common/Features";
 import NotFound from "../../pages/common/NotFound";
 import GuideDashboard from "../../pages/guide/GuideDashboard";
+import Login from "../../pages/auth/Login";
 import Alerts from "../../pages/guide/Alerts";
 import GroupManagement from "../../pages/guide/GroupManagement";
 import MemberDetails from "../../pages/guide/MemberDetails";
@@ -23,6 +24,8 @@ function AppRoutes() {
         <Route path="*" element={<NotFound />} />
 
 
+        {/* <Route path="/guide-dashboard" element={<GuideDashboard />} /> */}
+        <Route path="/login" element={<Login />} />
         <Route path="/guide-dashboard" element={<GuideDashboard />} />
         <Route path="/alerts" element={<Alerts />} />
         <Route path="/group-management" element={<GroupManagement />} />
