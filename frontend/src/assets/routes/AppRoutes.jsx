@@ -4,6 +4,7 @@ import Home from "../../pages/common/Home";
 import NotFound from "../../pages/common/NotFound";
 import GuideDashboard from "../../pages/guide/GuideDashboard";
 import Login from "../../pages/auth/Login";
+import Signup from "../../pages/auth/Signup";
 
 function AppRoutes() {
   return (
@@ -15,7 +16,8 @@ function AppRoutes() {
 
 
         {/* <Route path="/guide-dashboard" element={<GuideDashboard />} /> */}
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
