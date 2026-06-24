@@ -192,3 +192,43 @@ body{
 }
 
 }
+.learn-more-section {
+  padding: 80px 10%;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.learn-more-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.learn-more-section p {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.learn-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.learn-card:hover {
+  transform: translateY(-8px);
+}
+
+.learn-card h3 {
+  margin-bottom: 15px;
+}

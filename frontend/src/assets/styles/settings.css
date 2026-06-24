@@ -1,0 +1,145 @@
+.settings-container{
+  min-height:100vh;
+  padding:30px;
+  background:linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #334155
+  );
+  color:white;
+}
+
+.settings-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+.settings-header h1{
+  font-size:38px;
+}
+
+.dashboard-btn{
+  padding:12px 24px;
+  border:none;
+  border-radius:12px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.settings-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(350px,1fr));
+  gap:25px;
+}
+
+.setting-card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(15px);
+  padding:25px;
+  border-radius:20px;
+}
+
+.setting-card h2{
+  margin-bottom:20px;
+  color:#38bdf8;
+}
+
+.setting-item{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:18px;
+}
+
+.setting-item label{
+  margin-bottom:8px;
+}
+
+.setting-item input{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#1e293b;
+  color:white;
+}
+
+.save-btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#22c55e;
+  color:white;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.toggle-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.toggle-row input{
+  transform:scale(1.2);
+}
+
+.danger-zone{
+  margin-top:35px;
+  background:rgba(239,68,68,0.15);
+  border:1px solid rgba(239,68,68,0.4);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.danger-zone h2{
+  color:#ef4444;
+  margin-bottom:10px;
+}
+
+.logout-btn{
+  margin-top:15px;
+  padding:12px 25px;
+  border:none;
+  border-radius:12px;
+  background:#ef4444;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.dashboard-btn:hover,
+.save-btn:hover,
+.logout-btn:hover{
+  opacity:.9;
+}
+
+@media(max-width:768px){
+
+  .settings-container{
+    padding:15px;
+  }
+
+  .settings-header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+  }
+
+  .settings-header h1{
+    font-size:30px;
+  }
+
+  .settings-grid{
+    grid-template-columns:1fr;
+  }
+
+}
