@@ -35,14 +35,7 @@ function AppRoutes() {
         
         <Route path="/login" element={<Login />} />
 
-        {/* // Guide routes
-        <Route path="/guide-dashboard" element={<GuideDashboard />} />
-        <Route path="/alerts" element={<Alerts />} />
-        <Route path="/group-management" element={<GroupManagement />} />
-        <Route path="/member-details" element={<MemberDetails />} />
-        <Route path="/team-analytics" element={<TeamAnalytics />} />
-        <Route path="/reports" element={<Reports />} />
-        <Route path="/ai-summary" element={<AISummary />} /> */}
+        
 
         // Student routes 
         <Route path="/student-dashboard" element={<StudentDashboard />} />
