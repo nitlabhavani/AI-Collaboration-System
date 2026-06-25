@@ -7,10 +7,13 @@ import NotFound from "../../pages/common/NotFound";
 
 import Login from "../../pages/auth/Login";
 import Signup from "../../pages/auth/Signup";
-import Alerts from "../../pages/guide/Alerts";
-import TeamAnalytics from "../../pages/guide/TeamAnalytics";
+import VerifyOTP from "../../pages/auth/VerifyOTP";
+import ForgetPassword from "../../pages/auth/ForgetPassword";
 
-
+import UploadFile from "../../pages/filesharing/UploadFile";
+import SharedFiles from "../../pages/filesharing/SharedFiles";
+import FileCard from "../../pages/filesharing/FileCard";
+import FilePreview from "../../pages/filesharing/FilePreview";
 
 import StudentDashboard from "../../pages/student/StudentDashboard";
 import Groups from "../../pages/student/Groups";
@@ -35,15 +38,8 @@ function AppRoutes() {
         //Auth routes
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-
-        // Guide routes
-        <Route path="/guide-dashboard" element={<GuideDashboard />} />
-        <Route path="/alerts" element={<Alerts />} />
-        <Route path="/group-management" element={<GroupManagement />} />
-        <Route path="/member-details" element={<MemberDetails />} />
-        <Route path="/team-analytics" element={<TeamAnalytics />} />
-        <Route path="/reports" element={<Reports />} />
-        <Route path="/ai-summary" element={<AISummary />} />
+        <Route path="/verify-otp" element={<VerifyOTP />} />
+        <Route path="forget-password" element={<ForgetPassword />} />
 
         // Student routes 
         <Route path="/student-dashboard" element={<StudentDashboard />} />
@@ -53,6 +49,17 @@ function AppRoutes() {
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
+
+        //filesharing
+       <Route path="/upload-file" element={<UploadFile />} />
+       <Route path="/shared-files" element={<SharedFiles />} />
+       <Route path="/file-card" element={<FileCard />} />
+       <Route path="/file-preview" element={<FilePreview />} />
+
+       //chat routes
+       <Route path="/group-chat" element={<GroupChat />} />
+       <Route path="/single-chat" element={<SingleChat />} />
+
 
       </Routes>
     </BrowserRouter>
