@@ -20,6 +20,9 @@ import Profile from "../../pages/student/Profile";
 import Settings from "../../pages/student/Settings";
 
 import UploadFile from "../../assets/Components/fileSharing/UploadFile";
+import SharedFiles from "../../assets/Components/fileSharing/SharedFiles";
+import FileCard from "../../assets/Components/fileSharing/FileCard";
+import FilePreview from "../../assets/Components/fileSharing/FilePreview";
 
 
 function AppRoutes() {
@@ -48,6 +51,9 @@ function AppRoutes() {
 
         //file sharing
         <Route path="/upload-file" element={<UploadFile />} />
+        <Route path="/shared-files" element={<SharedFiles />} />
+        <Route path="/file-card" element={<FileCard />} />
+        <Route path="/file-preview" element={<FilePreview />} />
 
       </Routes>
     </BrowserRouter>

@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import {
   FaBars,
   FaTimes,
-  FaUserCircle
+  FaUserCircle,
+  FaBell
 } from "react-icons/fa";
 
 import "../../assets/styles/studentDashboard.css";
@@ -43,15 +44,29 @@ function StudentDashboard() {
 
   </div>
 
-  <div className="right-section">
+ <div className="right-section">
 
-    <FaUserCircle className="profile-icon" />
+  <FaBell
+    className="notification-icon"
+    onClick={() => navigate("/notifications")}
+  />
 
-    <button className="logout-btn">
-      Logout
-    </button>
+ <FaUserCircle
+  className="profile-icon"
+  onClick={() => navigate("/profile")}
+/>
 
-  </div>
+<button
+  className="logout-btn"
+  onClick={() => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  }}
+>
+  Logout
+</button>
+
+</div>
 
 </div>
 
@@ -179,21 +194,39 @@ function StudentDashboard() {
       </div>
 
       {/* Quick Actions */}
-     <button onClick={() => navigate("/groups")}>
-  👥 My Groups
-</button>
+     {/* Quick Actions */}
 
-<button onClick={() => navigate("/upload-file")}>
-  📁 Files
-</button>
+<div className="quick-actions">
 
-<button onClick={() => navigate("/group-chat")}>
-  💬 Group Chat
-</button>
+  <button
+    className="action-btn"
+    onClick={() => navigate("/groups")}
+  >
+    👥 My Groups
+  </button>
 
-<button onClick={() => navigate("/performance")}>
-  📊 Analytics
-</button>
+  <button
+    className="action-btn"
+    onClick={() => navigate("/upload-file")}
+  >
+    📁 Upload Files
+  </button>
+
+  <button
+    className="action-btn"
+    onClick={() => navigate("/group-chat")}
+  >
+    💬 Group Chat
+  </button>
+
+  <button
+    className="action-btn"
+    onClick={() => navigate("/performance")}
+  >
+    📊 Analytics
+  </button>
+
+</div>
 
       {/* Bottom Grid */}
       <div className="dashboard-grid">
