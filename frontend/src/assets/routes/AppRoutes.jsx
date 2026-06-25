@@ -6,6 +6,7 @@ import Features from "../../pages/common/Features";
 import NotFound from "../../pages/common/NotFound";
 
 import Login from "../../pages/auth/Login";
+import Signup from "../../pages/auth/Signup";
 import Alerts from "../../pages/guide/Alerts";
 import TeamAnalytics from "../../pages/guide/TeamAnalytics";
 
@@ -19,26 +20,30 @@ import Notifications from "../../pages/student/Notifications";
 import Profile from "../../pages/student/Profile";
 import Settings from "../../pages/student/Settings";
 
-import UploadFile from "../../assets/Components/fileSharing/UploadFile";
-import SharedFiles from "../../assets/Components/fileSharing/SharedFiles";
-import FileCard from "../../assets/Components/fileSharing/FileCard";
-import FilePreview from "../../assets/Components/fileSharing/FilePreview";
-
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
+        //common routes
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/features" element={<Features/>} />
         <Route path="*" element={<NotFound />} />
 
 
-        
+        //Auth routes
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
 
-        
+        // Guide routes
+        <Route path="/guide-dashboard" element={<GuideDashboard />} />
+        <Route path="/alerts" element={<Alerts />} />
+        <Route path="/group-management" element={<GroupManagement />} />
+        <Route path="/member-details" element={<MemberDetails />} />
+        <Route path="/team-analytics" element={<TeamAnalytics />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/ai-summary" element={<AISummary />} />
 
         // Student routes 
         <Route path="/student-dashboard" element={<StudentDashboard />} />
@@ -48,12 +53,6 @@ function AppRoutes() {
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
-
-        //file sharing
-        <Route path="/upload-file" element={<UploadFile />} />
-        <Route path="/shared-files" element={<SharedFiles />} />
-        <Route path="/file-card" element={<FileCard />} />
-        <Route path="/file-preview" element={<FilePreview />} />
 
       </Routes>
     </BrowserRouter>
