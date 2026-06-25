@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './VerifyOTP.css';
+import '../../assets/styles/VerifyOtp.css';
 
 const VerifyOTP = () => {
   const [otp, setOtp] = useState(['', '', '', '', '', '']);

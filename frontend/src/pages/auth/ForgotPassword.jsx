@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './ForgotPassword.css';
+import '../../assets/styles/ForgotPassword.css';
 
 const ForgotPassword = () => {
   const [step, setStep] = useState(1);

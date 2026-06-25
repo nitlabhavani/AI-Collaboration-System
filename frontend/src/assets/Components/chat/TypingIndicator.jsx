@@ -1,5 +1,5 @@
 import React from 'react';
-import './TypingIndicator.css';
+import '../../styles/TypingIndicator.css';
 
 const TypingIndicator = ({ users }) => {
   if (!users || users.length === 0) return null;

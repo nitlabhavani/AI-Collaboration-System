@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ChatHeader.css';
+import '../../styles/ChatHeader.css';
 
 const ChatHeader = ({ chatName, avatar, isOnline, memberCount, onBack, onMenuClick }) => {
   const [showMenu, setShowMenu] = useState(false);

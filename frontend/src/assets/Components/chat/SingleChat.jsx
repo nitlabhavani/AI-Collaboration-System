@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import ChatHeader from './ChatHeader';
-import MessageBubble from './MessageBubble';
-import ChatInput from './ChatInput';
-import TypingIndicator from './TypingIndicator';
-import OnlineMembers from './OnlineMembers';
-import './SingleChat.css';
+import ChatHeader from '../chat/ChatHeader';
+import MessageBubble from '../chat/MessageBubble';
+import ChatInput from '../chat/ChatInput';
+import TypingIndicator from '../chat/TypingIndicator';
+import OnlineMembers from '../chat/OnlineMembers';
+import '../../styles/SingleChat.css';
 
 const SingleChat = () => {
   const [messages, setMessages] = useState([

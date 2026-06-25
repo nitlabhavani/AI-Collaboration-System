@@ -1,5 +1,5 @@
 import React from 'react';
-import './OnlineMembers.css';
+import '../../styles/OnlineMembers.css';
 
 const OnlineMembers = ({ members, onClose, onInvite }) => {
   const getInitials = (name) => {

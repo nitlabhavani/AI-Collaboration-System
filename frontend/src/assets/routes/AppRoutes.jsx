@@ -8,12 +8,12 @@ import NotFound from "../../pages/common/NotFound";
 import Login from "../../pages/auth/Login";
 import Signup from "../../pages/auth/Signup";
 import VerifyOTP from "../../pages/auth/VerifyOTP";
-import ForgetPassword from "../../pages/auth/ForgetPassword";
+import ForgotPassword from "../../pages/auth/ForgotPassword";
 
-import UploadFile from "../../pages/filesharing/UploadFile";
-import SharedFiles from "../../pages/filesharing/SharedFiles";
-import FileCard from "../../pages/filesharing/FileCard";
-import FilePreview from "../../pages/filesharing/FilePreview";
+import UploadFile from "../Components/fileSharing/UploadFile";
+import SharedFiles from "../Components/fileSharing/SharedFiles";
+import FileCard from "../Components/fileSharing/FileCard";
+import FilePreview from "../Components/fileSharing/FilePreview";
 
 import StudentDashboard from "../../pages/student/StudentDashboard";
 import Groups from "../../pages/student/Groups";
@@ -22,6 +22,9 @@ import Performance from "../../pages/student/Performance";
 import Notifications from "../../pages/student/Notifications";
 import Profile from "../../pages/student/Profile";
 import Settings from "../../pages/student/Settings";
+
+import GroupChat from "../Components/chat/GroupChat";
+import SingleChat from "../Components/chat/SingleChat";
 
 
 function AppRoutes() {
@@ -39,7 +42,7 @@ function AppRoutes() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/verify-otp" element={<VerifyOTP />} />
-        <Route path="forget-password" element={<ForgetPassword />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
 
         // Student routes 
         <Route path="/student-dashboard" element={<StudentDashboard />} />

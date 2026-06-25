@@ -1,5 +1,5 @@
 import React from 'react';
-import './MessageBubble.css';
+import '../../styles/MessageBubble.css';
 
 const MessageBubble = ({ message, isOwn, senderName, senderAvatar, timestamp, onReply, onDelete }) => {
   const getInitials = (name) => {
